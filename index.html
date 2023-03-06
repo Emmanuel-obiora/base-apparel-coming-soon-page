@@ -8,26 +8,46 @@
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- linking style sheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- linking google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+  <main class="main">
+    <article class="main-left">
+      <img src="./images/logo.svg" alt="Logo">
+      <h1>
+        <span class="head-col">We're</span> coming soon
+      </h1>
+      <p>Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <div class="input-section">
+        <div class="input-mail">
+          <input type="text" title="email" id="userMail" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="error">
+          <div class="arrow-right" id="clickable">
+            <img src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p id="newHint">Please enter an email address to proceed</p>
+      </div>
+    </article>
+    <div class="main-right"> </div>
+  </main>
   
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://emmanuel-obiora.github.io/portfolio-about-me-/src" rel="noopener" target="_blank">Obiora Emmanuel</a>.
     </p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
