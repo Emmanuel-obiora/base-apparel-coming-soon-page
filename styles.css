@@ -34,10 +34,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1.8rem 3.6rem;
+    z-index: 0;
 }
 
 .main-left > img{
-    max-width: 45%;
+    max-width: 35%;
 }
 
 .main-left > h1{
@@ -105,6 +106,7 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    box-shadow: 2px 3px 10px var(--DesaturatedRed);
 }
 
 .arrow-right:hover{
@@ -139,10 +141,11 @@ footer{
 }
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    color: var(--DesaturatedRed);
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--SoftRed); 
 }
 
 /* styles to add error text and messages */
@@ -164,4 +167,56 @@ footer{
 
 .input-error .input-mail .arrow-right{
     right: -1rem;
+}
+
+/* adding styles for mobile devices */
+@media screen and (max-width: 37.5rem){
+    .main{
+        grid-template-columns: 1fr;
+        width: 320px;
+        height: auto;
+    }
+
+    .main-left > img{
+        margin-left: 2rem;
+    }
+
+    .main-left{
+        padding: 1.5rem 0;
+        height: 600px;
+        background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
+    .main-left > h1{
+        text-align: center;
+    }
+
+    .head-col{
+        font-weight: 300;
+    }
+
+    .main-left > p{
+        text-align: center;
+        font-size: 12px;
+        margin: 1rem 2rem;
+    }
+
+    .input-section{
+        margin: .8rem 2rem;
+    }
+
+    .inside-hero{
+        background: url('./images/hero-mobile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* z-index: 1; */
+        height: 40%;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .main-right{
+        display: none;
+    }
 }
