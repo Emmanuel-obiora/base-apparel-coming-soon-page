@@ -6,7 +6,7 @@
 
 :root{
     --DesaturatedRed: hsl(0, 36%, 70%);
-    --DesaturatedRed-varient: hsl(0, 33%, 77%);
+    --DesaturatedRed-varient: hsl(0, 61%, 71%);
     --SoftRed: hsl(0, 93%, 68%);
     --DarkGrayishRed: hsl(0, 6%, 24%);
 }
@@ -111,7 +111,7 @@ body{
 }
 
 .arrow-right:hover{
-    color: var(--DesaturatedRed-varient);
+    background: var(--DesaturatedRed-varient);
 }
 
 .arrow-right:active{
