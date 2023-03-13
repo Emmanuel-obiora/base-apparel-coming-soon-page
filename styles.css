@@ -116,6 +116,7 @@ body{
 
 .arrow-right:active{
     margin: 0 0 .3rem 0;
+    transition: ease-in-out 4ms;
 }
 
 .arrow-right > img{
